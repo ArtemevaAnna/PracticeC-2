@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int k = 0;
+    string previous;
+    cin >> previous;
+    string current;
+    while (cin >> current) {
+        ++k;
+        if (previous == current)
+            cout << "Word " << previous << " is repeating on position " << k << '\n';
+    }
+    return 0;
+}
